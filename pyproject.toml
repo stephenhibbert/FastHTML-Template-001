@@ -1,0 +1,28 @@
+[project]
+name = "FastHTML-Project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "alembic>=1.13.3",
+    "bcrypt>=4.2.0",
+    "jupyterlab>=4.2.5",
+    "monsterui>=0.0.6",
+    "notebook>=7.2.2",
+    "psycopg2-binary>=2.9.10",
+    "python-decouple>=3.8",
+    "python-fasthtml>=0.8.0",
+    "resend>=2.4.0",
+    "sqlalchemy-utils>=0.41.2",
+    "sqlmodel>=0.0.22",
+    "typer[all]>=0.15.1",
+]
+
+[project.scripts]
+fh = "cli:app"
+
+# define src as the root folder for my tests to be considered from the src folder
+[tool.pytest.ini_options]
+testpaths = ["src"]
+
